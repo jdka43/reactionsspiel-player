@@ -24,9 +24,11 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     radio.sendString("player")
+    radio.setGroup(99)
 })
 radio.onReceivedString(function (receivedString) {
     player = receivedString
+    radio.setGroup(88)
 })
 let player = ""
 radio.setGroup(88)
