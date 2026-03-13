@@ -5,7 +5,8 @@
         "core": "*",
         "v2": "*",
         "funk": "*",
-        "warte bis...": "github:calliope-edu/warte-bis#f771255087368c53690ea55c66da295e41c4d0c3"
+        "warte bis...": "github:calliope-edu/warte-bis#f771255087368c53690ea55c66da295e41c4d0c3",
+        "v1": "*"
     },
     "files": [
         "main.blocks",
