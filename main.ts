@@ -26,12 +26,20 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 radio.onReceivedString(function (receivedString) {
     player = receivedString
+    radio.setGroup(88)
+    basic.showString("p:")
+    basic.showString(player)
+    basic.pause(1000)
+    basic.clearScreen()
 })
 let player = ""
 let ist_gedrückt = 0
 ist_gedrückt = 0
 radio.setGroup(88)
 WaitUntilBlocks.waitUntilButtonPressed(Button.A)
-radio.sendString("player")
-basic.showString("send")
-ist_gedrückt = 1
+if (input.buttonIsPressed(Button.A)) {
+    radio.sendString("player")
+    radio.setGroup(99)
+    basic.showString("send")
+    ist_gedrückt = 1
+}
