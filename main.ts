@@ -29,3 +29,4 @@ let player = ""
 radio.setGroup(88)
 WaitUntilBlocks.waitUntilButtonPressed(Button.A)
 radio.sendString("player")
+basic.showString("senden")
